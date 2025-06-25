@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large – A landing page template designed to allow users to submit articles with ease and efficiency.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container nav-h">
+        <div class="hamburger">&#9776;</div>
+        <div class="top-bar">
+            <a href="#" class="top-content sub" alt="subscribe">Subscribe</a>
+            <a href="#" class="top-content logo" alt="btn">
+                <h1 class="top">Large</h1>
+            </a>
+            <a href="#" class="top-content sign" alt="btn">
+                <img class="img" src="./images/search.png" alt="Search Logo">
+                <button>Sign Up</button>
+            </a>
+        </div>
+        <!-- Menu -->
+        <div class="menu main">
+            <ul class="main-menu">
+                <li class="menu-item"><a href="#" alt="World">World</a></li>
+                <li class="menu-item"><a href="#" alt="U.S.">U.S.</a></li>
+                <li class="menu-item"><a href="#" alt="Technology">Technology</a></li>
+                <li class="menu-item"><a href="#" alt="Design">Design</a></li>
+                <li class="menu-item"><a href="#" alt="Culture">Culture</a></li>
+                <li class="menu-item"><a href="#" alt="Business">Business</a></li>
+                <li class="menu-item"><a href="#" alt="Politics">Politics</a></li>
+                <li class="menu-item"><a href="#" alt="Opinion">Opinion</a></li>
+                <li class="menu-item"><a href="#" alt="Science">Science</a></li>
+                <li class="menu-item"><a href="#" alt="Health">Health</a></li>
+                <li class="menu-item"><a href="#" alt="Style">Style</a></li>
+                <li class="menu-item"><a href="#" alt="Travel">Travel</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1 class="title">Title of a longer featured blog post</h1>
+            <p class="para">Multiple lines of text that form contain which it self now multiple form contain which it
+                self lines of text that form contain which it self now</p>
+            <p class="continue">Continue reading...</p>
+        </div>
+    </div>
+    <!-- Blog Boxes -->
+    <div class="section">
+        <div class="boxes">
+            <div class="box-spacing">
+                <div class="box-1">
+                    <div class="box-content">
+                        <h3>World</h3>
+                        <h1>Featured Post</h1>
+                        <span>Nov 12</span>
+                        <p>Multiple lines of text that form contain which it self now multiple form contain</p>
+                        <h2>Continue Reading</h2>
+                    </div>
+                    <div class="box-image">
+                        <img src="./images/don-b-4tjOxp1Qnyo-unsplash.jpg" alt="Box Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="box-1">
+                <div class="box-content">
+                    <h3>Design</h3>
+                    <h1>Post Title</h1>
+                    <span>Nov 11</span>
+                    <p>Multiple lines of text that form contain which it self now multiple form contain</p>
+                    <h2>Continue Reading</h2>
+                </div>
+                <div class="box-image">
+                    <img src="./images/don-b-4tjOxp1Qnyo-unsplash.jpg" alt="Box Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog -->
+    <section class="blogs">
+        <div class="blog">
+            <div class="blog-section">
+                <h1>Contributed Blog</h1>
+                <div class="form-blog">
+                    <button onclick="retrieve()">Print the Blog</button>
+                    <p id="Gallery"></p>
+                    <h1 id="Heading"></h1>
+                    <p id="Desc"></p>
+                    <p id="Author"></p>
+                    <img src="#Images" alt="">
+                </div>
+            </div>
+
+            <div class="aside">
+                <div class="aside-title">
+                    <h1>About</h1>
+                    <p>Multiple lines of text that form contain which it self now multiple lines of text that form
+                        contain which it self now multiple form contain</p>
+                </div>
+                <div class="aside-archive">
+                    <h1>Archives</h1>
+                    <p>March 2014</p>
+                    <p>February 2014</p>
+                    <p>January 2014</p>
+                    <p>December 2013</p>
+                    <p>November 2013</p>
+                    <p>October 2013</p>
+                    <p>September 2013</p>
+                    <p>August 2013</p>
+                    <p>July 2013</p>
+                    <p>June 2013</p>
+                    <p>May 2013</p>
+                    <p>April 2013</p>
+                </div>
+                <div class="aside-else">
+                    <h1>Social Icon</h1>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://x.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form Blog -->
+    <div class="forms">
+        <h1>Contribute a Blog</h1>
+        <form action="#" method="POST" enctype="multipart/form-data" id="Contactform">
+            <label for="Title">Title</label>
+            <input type="text" id="Title" name="Text" required>
+
+            <label for="Name">Author Name</label>
+            <input type="text" id="Name" name="User" required>
+            
+            <label for="Images">Featured Image</label>
+            <input type="file" id="Images" name="Photo" required>
+
+            <label for="Message">Description</label>
+            <textarea name="message" id="Message" required></textarea>
+
+            <button type="button" onclick="storeAndRedirect()">Submit</button>
+
+            <p id="message">Thank you for your contribution. Click the 'Print' button to view the blog layout. You will
+                be redirected shortly...</p>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <h1>Blog template built by Imran</h1>
+            <a class="top" href="#">Back to top</a>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
